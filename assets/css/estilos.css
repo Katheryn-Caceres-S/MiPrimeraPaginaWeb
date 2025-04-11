@@ -54,7 +54,7 @@ body  {
     grid-template: 
         "header" 100px
         "navbar" 100px
-        "article" 100px
+        "article" auto
         "aside" 100px
         "footer" 100px;
 }
@@ -65,7 +65,7 @@ body  {
     grid-template:
     "header header" 100px
     "nav nav" 50px
-    "article" auto
+    "aside article" auto
     "footer footer" 100px 200px auto
  }   
 }
