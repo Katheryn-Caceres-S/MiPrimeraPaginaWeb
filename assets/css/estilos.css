@@ -12,18 +12,60 @@ html body {
     height: 100%;
 }
  
-
 body  {
          font-family: "Lilita One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        font-size: 1.2em;
+        min-height: 100%;
       }
       
-}
-.contenedor{
-    box-shadow: -1px 1px 0px rgba(0,0,0, 0,75);
+/**    > *    significa que esto va a aplicar a todo lo que este dentro de .contenedor */
+.contenedor > * {
+    box-shadow: -1px 1px 8px rgba(0,0,0, 0.75);
     text-align: center;
     padding: 50px;
-    border-radius: 8px;
-    
+    border-radius: 20px;
+    }
+.header{
+    grid-area: header;
+    background-color:aquamarine ;
+}
+.nav{
+    grid-area: navbar;
+    background-color: pink;
+}
+.aside{
+    grid-area: aside;
+    background-color: aquamarine;
+}
+.article{
+    grid-area: article;
+    background-color: pink;
+}
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+/* separador es gap*/
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+        "header" 100px
+        "navbar" 100px
+        "article" 100px
+        "aside" 100px
+        "footer" 100px;
+}
+
+/* esto es una media query. que sucede con algun comportamiento*/
+@media (min-width:600px){
+ .contenedor{
+    grid-template:
+    "header header" 100px
+    "nav nav" 50px
+    "article" auto
+    "footer footer" 100px 200px auto
+ }   
 }
