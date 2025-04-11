@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Lilita+One&display=swap');
+
+/*este es un reset de css a HTML. Debe ir en todos los archivos css. de la linea 6 a la 14*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html body {
+    height: 100%;
+}
+ 
+
+body  {
+         font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+.contenedor{
+    box-shadow: -1px 1px 0px rgba(0,0,0, 0,75);
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+    
+}
